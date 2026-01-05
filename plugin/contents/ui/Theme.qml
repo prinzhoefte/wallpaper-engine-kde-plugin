@@ -21,23 +21,24 @@ Item {
     readonly property alias view: theme_view
 
     property bool _init: {
-        setColor(name => Kirigami.Theme[name]);
+        setColor();
         return true;
     }
-    function setColor(get_color) {
-        this.textColor                = get_color('textColor');
-        this.highlightColor           = get_color('highlightColor');
-        this.highlightedTextColor     = get_color('highlightedTextColor');
-        this.backgroundColor          = get_color('backgroundColor');
-        this.activeBackgroundColor    = get_color('activeBackgroundColor');
-        this.alternateBackgroundColor = get_color('alternateBackgroundColor');
-        this.linkColor                = get_color('linkColor');
-        this.visitedLinkColor         = get_color('visitedLinkColor');
-        this.positiveTextColor        = get_color('positiveTextColor');
-        this.positiveBackgroundColor  = get_color('positiveBackgroundColor');
-        this.neutralTextColor         = get_color('neutralTextColor');
-        this.negativeTextColor        = get_color('negativeTextColor');
-        this.disabledTextColor        = get_color('disabledTextColor');
+    function setColor() {
+        // Breeze dark colors
+        this.textColor                = "#d3d7cf";
+        this.highlightColor           = "#729fcf";
+        this.highlightedTextColor     = "#2e3436";
+        this.backgroundColor          = "#2e3436";
+        this.activeBackgroundColor    = "#555753";
+        this.alternateBackgroundColor = "#3c3f41";
+        this.linkColor                = "#3465a4";
+        this.visitedLinkColor         = "#75507b";
+        this.positiveTextColor        = "#8ae234";
+        this.positiveBackgroundColor  = "#4e9a06";
+        this.neutralTextColor         = "#fce94f";
+        this.negativeTextColor        = "#ef2929";
+        this.disabledTextColor        = "#888a85";
     }
 
     Item {
